@@ -6,13 +6,16 @@ const shopItemsContainer = document.getElementById("items");
 getFromBackEnd()
  .then(res=>{
      console.log("res", res);
+     
      let items="";
      res.forEach(item=>{
          items += `
          <div class="grid-item">
                     <div class="flex-cartandphoto">
-                        <img src="${item.img}">
-                        <input type="button" value="Add to cart">
+                    <h2>${item.price}</h2>
+                    <img src="${item.img}">
+                    <h1>${item.title}</h1>
+                    <input type="button" value="Add to cart"
                     </div>
                 </div>`
      })

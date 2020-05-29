@@ -71,7 +71,21 @@ div>i {
     display: flex;
     flex-direction: column;
     width: 400px;
+    text-align: center;
+    position: relative;
 }
 .flex-cartandphoto > input{
     width: 400px;
+}
+h1{
+    position: absolute;
+    bottom:50px;
+    left:100px;
+}
+h2{
+    position: absolute;
+    top:30px;
+    left:180px;
+    font-size: 30px;
+    color: green
 }
