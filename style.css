@@ -20,19 +20,21 @@ nav {
     justify-content: space-between;
     position: relative;
 }
+.input-icon{
+    position: relative;
+}
 div > input {
     width: 300px;
-    margin: 0;
-    height:20px;
-    
-    
+    margin-right: 20px;
+    height:20px;   
 }
-div>i {
-    border: 1px solid gray;
-    height: 20px;
+#icon {
+    font-size: 30px;
+    color: rgb(51, 177, 199);
     padding: 0;
     margin: 0;
     right:0;
+    top:0;
     position: absolute;
 }
 .flex-categories{
@@ -77,15 +79,18 @@ div>i {
 .flex-cartandphoto > input{
     width: 400px;
 }
-h1{
-    position: absolute;
-    bottom:50px;
-    left:100px;
+.flex-cartandphoto>img{
+    width: 350px
 }
 h2{
-    position: absolute;
-    top:30px;
-    left:180px;
     font-size: 30px;
     color: green
+}
+h3{
+    font-size: 30px;
+    margin:0;
+    color:black;
+    position: absolute;
+    right: 5px;
+    top :0px
 }
