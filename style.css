@@ -28,7 +28,7 @@ div > input {
     margin-right: 20px;
     height:20px;   
 }
-#icon {
+#icon-basket {
     font-size: 30px;
     color: rgb(51, 177, 199);
     padding: 0;
@@ -93,4 +93,44 @@ h3{
     position: absolute;
     right: 5px;
     top :0px
+}
+.bg-modal{
+    width : 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.7);
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    display: none;
+
+}
+.modal-content{
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+.bag-close{
+    margin-left:10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+.close-icon{
+    position: absolute;
+    top:0;
+    right: 15px;
+    font-size: 40px;
+    transform: rotate(45deg);
+    cursor: pointer;
+
+}
+.close-icon :hover{
+    padding: 10px;
+    border: 1px solid red;
+    border-style: dashed ;
 }
