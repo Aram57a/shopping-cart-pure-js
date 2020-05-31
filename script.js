@@ -2,9 +2,9 @@ import {getFromBackEnd} from "./utils/http.js";
 console.log(getFromBackEnd())
 
 const shopItemsContainer = document.getElementById("items");
-const cartItems = document.getElementById("modal-items");
+//const cartItems = document.getElementById("modal-items");
 let cartNumber=[];
-getFromBackEnd()
+/*getFromBackEnd()
  .then(res=>{
      console.log("res", res);
      
@@ -23,16 +23,18 @@ getFromBackEnd()
      shopItemsContainer.innerHTML=items;
      console.log("items", items)
  })
-
- window.addToCart=function (itemID,item){
+*/
+shopItemsContainer.innerHTML=getFromBackEnd();
+console.log("items", items)
+window.addToCart=function (itemID,item){
     cartNumber.push(itemID)
     document.getElementById("cart-number").innerHTML=cartNumber.length;
-    cartItems.innerHTML=item;
+  //  cartItems.innerHTML=item;
     return disableButton(itemID);
  }
 function disableButton(itemID){
     let button=document.getElementById(itemID);
     button.disabled=true;
 }
-document.getElementById("icon")
-console.log("shopItemsContainer", shopItemsContainer)
+//document.getElementById("icon")
+console.log("shopItemsContainer", shopItemsContainer);
